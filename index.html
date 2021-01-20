@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@400;900&display=swap" rel="stylesheet">
+
+    <title>CSS Technical Documentation Page</title>
+</head>
+
+<body>
+    <h1 id="page-title">Cascading Style Sheets: CSS Technical Documentation</h1>
+
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <a class="nav-link" href="#About_CSS">About CSS</a>
+        <a class="nav-link" href="#Important_Terminology">Important Terminology</a>
+        <a class="nav-link" href="#Units_of_Measurement">Units of Measurement</a>
+        <a class="nav-link" href="#Layout_Tools_and_Properties">Layout Tools and Properties</a>
+        <a class="nav-link" href="#Color_Values">Color Values</a>
+        <a class="nav-link" href="#Presentation_Properties">Presentation Properties</a>
+        <a class="nav-link" href="#References">References</a>
+
+    </nav>
+
+    <main id="main-doc">
+
+        <section id="About_CSS" class="main-section">
+            <header class="heading">About CSS</header>
+            <h3>Boxes, Boxes, Boxes!</h3>
+            <p>Every element in HTML is a box. With CSS, we can style both an individual box (element) and groups of boxes (elements). As detailed in the sections below, CSS is used to alter both the presentation and the layout of HTML.</p>
+            <h3 class="sub-heading">3 Methods of Implementation</h3>
+            <p>There are three ways to style HTML with CSS. They are all listed below, however; the third method, linking an external page to your HTML document, is preffered. </p>
+            <ol>
+                <li class="ordered-list-item"><strong>Styling in-line</strong><br />In the HTML document, add '<code>style=" "</code>' inside an element. <br />For example: <code><p style="color:red;">&lt;p style="color:red;"&gt;This sentence is red.&lt;/p&gt;</p></code>There must
+                    be a colon after the property and a semi-colon after the value.</li>
+                <li class="ordered-list-item"><strong>Styling in the head of the HTML document</strong><br />In the HTML document, add a &lt;style&gt; tag inside of the &lt;head&gt; of the document. Add properies and values inside the tag, following the { property: value; } format.
+                    <br />For example:<br />
+                    <div id="example-margin">
+                        &lt;head&gt;<br />
+                        <div id="second-example-margin">&lt;style&gt;<br />
+                            <div id="third-example-margin">.case-example {<br />
+                                <span id="fourth-example-margin">color: red;</span><br /> }
+                            </div>&lt;/style&gt;
+                        </div>
+                        &lt;/head&gt;
+                    </div>
+                </li>
+                <li class="ordered-list-item"><strong>Linking an external style sheet in the head of the HTML document</strong></li>
+            </ol>
+            <h3 class="sub-heading">Selectors and Declarations</h3>
+            <p>The order of declarations is important.</p>
+        </section>
+
+        <section id="Important_Terminology" class="main-section">
+            <header class="heading">Important Terminology</header>
+            <p>Listed below are terms (not properties) that are commonly used to speak about CSS. It is important to understand their meanings.</p>
+            <dl class="content-format">
+                <dt class="term">Brightness</dt>
+                <dd class="definition">The amount of black in a color value</dd>
+
+                <dt class="term">Cursive</dt>
+                <dd class="definition" id="cursive">A type of font family; depicted in this sentence.</dd>
+
+                <dt class="term">Fantasy</dt>
+                <dd class="definition" id="fantasy">A type of font family; depicted in this sentence.</dd>
+
+                <dt class="term">Hue</dt>
+                <dd class="definition">Color</dd>
+
+                <dt class="term">Lightness</dt>
+                <dd class="definition">The amount of white or black in a color value</dd>
+
+                <dt class="term">Normal Flow</dt>
+                <dd class="definition">The default layout of the elements</dd>
+
+                <dt class="term">Responsive/Responsiveness</dt>
+                <dd class="definition">Refers to the reaction to the various contstraints of devices</dd>
+
+                <dt class="term">Sans-serif</dt>
+                <dd class="definition" id="sans-serif">A type of font family; depicted in this sentence. There aren't any 'feet' along the ends of the letters.</dd>
+
+                <dt class="term">Saturation</dt>
+                <dd class="definition">The amount of gray in a color value</dd>
+
+                <dt class="term">Serif</dt>
+                <dd class="definition" id="serif">A type of font family; depicted in this sentence. There are little 'feet' along the ends of the letters.</dd>
+
+                <dt class="term">Viewport</dt>
+                <dd class="definition">The user's visible area of a webpage</dd>
+            </dl>
+        </section>
+
+        <section id="Units_of_Measurement" class="main-section">
+            <header class="heading">Units of Measurement</header>
+            <p class="content-format">A very important component of layout and presentation is sizing. The following units can be used to specify the size of any and everly element. Choose your units wisely! </p>
+            <table class="table">
+                <tr>
+                    <th>Units</th>
+                    <th>Example</th>
+                    <th>Best Practice</th>
+                </tr>
+                <tr>
+                    <td>px</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                </tr>
+                <tr>
+                    <td>em</td>
+                </tr>
+                <tr>
+                    <td>rem</td>
+                </tr>
+                <tr>
+                    <td>vh</td>
+                </tr>
+                <tr>
+                    <td>vw</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="Layout_Tools_and_Properties" class="main-section">
+            <header class="heading">Layout Tools and Properties</header>
+
+            <div>
+                <h3>Flexbox</h3>
+                <div id="empty-flexbox"></div>
+            </div>
+
+            <div>
+                <h3>Grid</h3>
+                <div id="empty-grid-box"></div>
+            </div>
+
+        </section>
+
+        <section id="Color_Values" class="main-section">
+            <header class="heading">Color Values</header>
+            <p>The '<code>color:</code>' property is used to specify the color of text.</p>
+            <p>'<code>background-color:</code>' and '<code>border-color:</code>' are examples of properties that are used to add color to element backgrounds and borders.</p>
+
+            <br />
+
+            <p>The following is a list of all possible color value types, to use with any color properties.</p>
+            <table class="table">
+                <tr>
+                    <th>Type</th>
+                    <th>Value code format</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td class="data-format-a">RGB Values</td>
+                    <td class="data-format-a"><code>rgb( , , );</code><br />Select 3 numbers between 0 and 360 to indicate red, green, and blue values</td>
+                    <td class="data-format-a"><code>rgb(231, 229, 226);</code><br />This is the gray color displayed in this box, and the entire background of the page.</td>
+                </tr>
+                <tr>
+                    <td class="data-format-b">RGBA Values</td>
+                    <td class="data-format-b"><code>rgba( , , , );</code><br />This is RGB, but with the addition of a 4th number that indicates the alpha, or opacity, of the color. Indicate this number with a decimal between 0 and 1.</td>
+                    <td class="data-format-b" id="background-box-example"><code>rgb(231, 229, 226, 0.5);</code><br />This is the same color as the one above, but with 50% of the opacity.</td>
+                </tr>
+                <tr>
+                    <td class="data-format-a">Hex codes</td>
+                    <td class="data-format-a"># ;<br />Use 6 hexadecimal digits to create the color value</td>
+                    <td class="data-format-a"><code>#000000;</code> (<strong id="black">black</strong>)<br /><code>#FFFFFF</code> (<strong id="white">white</strong>)</td>
+                </tr>
+                <tr>
+                    <td class="data-format-b">HSL <br />(Hue, Saturation, Lightness)</td>
+                    <td class="data-format-b"><code>hsl( , , );</code><br />This value requires a number between 0 and 360 to indicate hue, and then two percentages to indicate saturation and lightness.</td>
+                    <td class="data-format-b"><code>hsl(200, 73%, 47%);</code><br /><strong id="example-text">This text shows the color of the example.</strong></td>
+                </tr>
+                <tr>
+                    <td class="data-format-a">HSLA <br />(Hue, Saturation, Lightness, Alpa(Opacity))</td>
+                    <td class="data-format-a"><code>hsla( , , , );</code><br />This format is the same as above, but with a fourth number to indicate opacity. This number should be a decimal, between 0 and 1.</td>
+                    <td class="data-format-a"><code>hsla(200, 73%, 47%, 0.5);</code><br /><strong id="second-example-text">This text shows the same color as above, but with 50% opacity.</strong></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="Presentation_Properties" class="main-section">
+            <header class="heading">Presentation Properties</header>
+            <h3 class="sub-heading">Box Styling</h3>
+            <ul>
+                <li class="unordered-list-item">border-style: solid, dotted, dashed, double, groove, inset, outset, hidden, none;</li>
+                <li class="unordered-list-item tab">border-top-style: solid, dotted, dashed, double, groove, inset, outset, hidden, none;</li>
+                <li class="unordered-list-item tab">border-right-style: solid, dotted, dashed, double, groove, inset, outset, hidden, none;</li>
+                <li class="unordered-list-item tab">border-bottom-style: solid, dotted, dashed, double, groove, inset, outset, hidden, none;</li>
+                <li class="unordered-list-item tab">border-left-style: solid, dotted, dashed, double, groove, inset, outset, hidden, none;</li>
+                <li class="unordered-list-item">border-image: url("") , , , ;</li>
+                <li class="unordered-list-item">border-color: <em>color value</em>;</li>
+                <li class="unordered-list-item tab">border-top-color: <em>color value</em>;</li>
+                <li class="unordered-list-item tab">border-right-color: <em>color value</em>;</li>
+                <li class="unordered-list-item tab">border-bottom-color: <em>color value</em>;</li>
+                <li class="unordered-list-item tab">border-left-color: <em>color value</em>;</li>
+                <li class="unordered-list-item">border-radius: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item tab">border-top-right-radius: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item tab">border-bottom-right-radius: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item tab">border-bottom-left-radius: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item tab">border-top-left-radius: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item">box-shadow: <em>unit of measurement</em>;</li>
+            </ul>
+            <h3 class="sub-heading ">Background Styling</h3>
+            <ul>
+                <li class="unordered-list-item">background-color: <em>color value</em>;</li>
+                <li class="unordered-list-item">background-image: url("");</li>
+                <li class="unordered-list-item">background-repeat: repeat, repeat-x, repeat-y, no-repeat, fixed, scroll;</li>
+            </ul>
+            <h3 class="sub-heading ">Text Styling</h3>
+            <ul>
+                <li class="unordered-list-item">color: <em>color value</em>;</li>
+                <li class="unordered-list-item">font-family:</li>
+                <li class="unordered-list-item">font-size: <em>unit of measurement</em>, xx-small, smaller, small, medium, large, larger, xx-large;</li>
+                <li class="unordered-list-item">font-style: normal, italic, oblique;</li>
+                <li class="unordered-list-item">font-weight: normal, bold</li>
+                <li class="unordered-list-item">letter-spacing: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item">line-height: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item">list-style: (for unordered lists) none, disc, circle, square;</li>
+                <li class="unordered-list-item">list-style: (for ordered lists) decimal, deciaml-leading-zero, lower-alpha, upper-apla, lower-roman, upper-roman;</li>
+                <li class="unordered-list-item">list-style-image: url("");</li>
+                <li class="unordered-list-item">text-align: left, right, center, justify;</li>
+                <li class="unordered-list-item">text-decoration: none, underline, line-through, blink, overline;</li>
+                <li class="unordered-list-item">text-indent: <em>unit of measurement</em>;</li>
+                <li class="unordered-list-item">text-shadow: , , , ;</li>
+                <li class="unordered-list-item">text-transform: uppercase, lowercase, capitalize;</li>
+                <li class="unordered-list-item">vertical-align: baseline, sub, super, top;</li>
+                <li class="unordered-list-item">word-spacing: <em>unit of measurement</em>;</li>
+            </ul>
+            <h4 class="sub-heading ">Pseudo-elements</h4>
+            <ul>
+                <li class="unordered-list-item">:first-letter</li>
+                <li class="unordered-list-item">:first-line</li>
+                <p>If any of the following pseudo-elements are used, they must be in this order:</p>
+                <li class="unordered-list-item">:link</li>
+                <li class="unordered-list-item">:visited</li>
+                <li class="unordered-list-item">:hover</li>
+                <li class="unordered-list-item">:focus</li>
+                <li class="unordered-list-item">:active</li>
+            </ul>
+            <h4 class="sub-heading ">Cursor Styling</h4>
+            <ul>
+                <li class="unordered-list-item">cursor: auto, crosshair, default, pointer, move, text, wait, help, url ("");</li>
+                <li class="unordered-list-item">caret-color: <em>color value</em>;</li>
+            </ul>
+        </section>
+
+        <section id="References" class="main-section">
+            <header class="heading">References</header>
+        </section>
+
+    </main>
+</body>
+
+</html>

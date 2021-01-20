@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+#page-title,
+#main-doc {
+    margin-right: 3rem;
+    margin-left: 10rem;
+}
+
+.main-section {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 10rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 400px) {
+    #navbar {
+        position: static;
+        width: 100vw;
+        height: 10rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+}
+
+.content-format {
+    margin-top: .5rem;
+}
+
+.heading {
+    text-decoration: overline;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.ordered-list-item {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    list-style-type: decimal-leading-zero;
+}
+
+.unordered-list-item {
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    margin-left: 2.5rem;
+    list-style: square;
+}
+
+.tab {
+    margin-left: 4rem;
+    list-style: circle;
+}
+
+#example-margin {
+    margin-left: 1.5rem;
+}
+
+#second-example-margin {
+    margin-left: 1.5rem;
+}
+
+#third-example-margin {
+    margin-left: 1.5rem;
+}
+
+#fourth-example-margin {
+    margin-left: 1.5rem;
+}
+
+
+/*Important Terminology Styles*/
+
+.term {
+    font-weight: bold;
+}
+
+.definition {
+    margin-bottom: 1rem;
+}
+
+#cursive {
+    font-family: cursive;
+}
+
+#fantasy {
+    font-family: fantasy;
+}
+
+#sans-serif {
+    font-family: sans-serif;
+}
+
+#serif {
+    font-family: serif;
+}
+
+.table {
+    width: 55vw;
+    margin-top: 1rem;
+    padding: .5rem;
+    text-align: left;
+    background-color: rgb(240, 240, 240);
+}
+
+.data-format-a {
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: top;
+    background-color: rgb(231, 229, 226);
+}
+
+.data-format-b {
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+#background-box-example {
+    background-color: rgb(231, 229, 226, 0.5);
+}
+
+#black {
+    color: #000000;
+}
+
+#white {
+    color: #FFFFFF;
+}
+
+#example-text {
+    color: hsl(200, 73%, 47%);
+}
+
+#second-example-text {
+    color: hsla(200, 73%, 47%, 0.5);
+}
+
+#empty-flexbox {
+    width: 55vw;
+    height: 20vh;
+    background-color: rgb(240, 240, 240);
+}
+
+#empty-grid-box {
+    width: 55vw;
+    height: 20vh;
+    background-color: rgb(240, 240, 240);
+}
+
+#note {
+    margin-left: 3rem;
+    font-style: italic;
+}
+
+body {
+    background-color: rgb(231, 229, 226);
+}
