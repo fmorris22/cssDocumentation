@@ -13,10 +13,9 @@
 </head>
 
 <body>
-    <!--<h1 id="page-title">Cascading Style Sheets: CSS Technical Documentation</h1>-->
 
     <nav id="navbar">
-        <header id="nav-title">Cascading Style Sheets: CSS Technical Documentation</header>
+        <header id="nav-title">Cascading Style Sheets:<br />CSS Technical Documentation</header>
         <a class="nav-link" href="#About_CSS">About CSS</a>
         <a class="nav-link" href="#Important_Terminology">Important Terminology</a>
         <a class="nav-link" href="#Units_of_Measurement">Units of Measurement</a>
@@ -27,18 +26,20 @@
 
     </nav>
 
+
     <main id="main-doc">
 
         <section id="About_CSS" class="main-section">
             <header class="heading">About CSS</header>
             <h3>Boxes, Boxes, Boxes!</h3>
-            <p>Every element in HTML is a box. With CSS, we can style both an individual box (element) and groups of boxes (elements). As detailed in the sections below, CSS is used to alter both the presentation and the layout of HTML.</p>
+            <p>It is helpful to think of every element in HTML as a box. With this in mind, we can use CSS to style both individual boxes (elements) and groups of boxes (groups of elements). HTML is the content, information and structure of a document. CSS
+                is used to alter both the presentation and the layout of that content.</p>
             <h3 class="sub-heading">3 Methods of Implementation</h3>
             <p>There are three ways to style HTML with CSS. They are all listed below, however; the third method, linking an external page to your HTML document, is preffered. </p>
             <ol>
-                <li class="ordered-list-item"><strong>Styling in-line</strong><br />In the HTML document, add '<code>style=" "</code>' inside an element. <br />For example: <code><p style="color:red;">&lt;p style="color:red;"&gt;This sentence is red.&lt;/p&gt;</p></code>There must
-                    be a colon after the property and a semi-colon after the value.</li>
-                <li class="ordered-list-item"><strong>Styling in the head of the HTML document</strong><br />In the HTML document, add a &lt;style&gt; tag inside of the &lt;head&gt; of the document. Add properies and values inside the tag, following the { property: value; } format.
+                <li class="ordered-list-item"><strong>Styling Inline</strong><br />In the HTML document, add <code>style=" "</code> inside an element. <br />For example: <code><p id="inline-example">&lt;p style="color:red;"&gt;<span style="color:red;">This sentence is red.</span>&lt;/p&gt;</p></code>There
+                    must be a colon after the property and a semi-colon after the value.</li>
+                <li class="ordered-list-item"><strong>Styling Internally</strong><br />In the HTML document, add a &lt;style&gt; tag inside the &lt;head&gt; of the document. Add properies and values inside the tag, following the { property: value; } format.
                     <br />For example:<br />
                     <div id="example-margin">
                         &lt;head&gt;<br />
@@ -50,18 +51,21 @@
                         &lt;/head&gt;
                     </div>
                 </li>
-                <li class="ordered-list-item"><strong>Linking an external style sheet in the head of the HTML document</strong></li>
+                <li class="ordered-list-item"><strong>Styling Externally</strong><br />
+                    <p class="work-progress">Work in progress.</p>
+                </li>
+
             </ol>
             <h3 class="sub-heading">Selectors and Declarations</h3>
-            <p>The order of declarations is important.</p>
+            <p class="work-progress">Work in progress.</p>
         </section>
 
         <section id="Important_Terminology" class="main-section">
             <header class="heading">Important Terminology</header>
-            <p>Listed below are terms (not properties) that are commonly used to speak about CSS. It is important to understand their meanings.</p>
+            <p>Listed below are terms (not properties) that are commonly used to speak about CSS.</p>
             <dl class="content-format">
                 <dt class="term">Brightness</dt>
-                <dd class="definition">The amount of black in a color value</dd>
+                <dd class="definition">The amount of black in a color value.</dd>
 
                 <dt class="term">Cursive</dt>
                 <dd class="definition" id="cursive">A type of font family; depicted in this sentence.</dd>
@@ -73,25 +77,25 @@
                 <dd class="definition">Color</dd>
 
                 <dt class="term">Lightness</dt>
-                <dd class="definition">The amount of white or black in a color value</dd>
+                <dd class="definition">The amount of white or black in a color value.</dd>
 
                 <dt class="term">Normal Flow</dt>
-                <dd class="definition">The default layout of the elements</dd>
+                <dd class="definition">The default layout of the elements.</dd>
 
                 <dt class="term">Responsive/Responsiveness</dt>
-                <dd class="definition">Refers to the reaction to the various contstraints of devices</dd>
+                <dd class="definition">Refers to the reaction to various contstraints of devices.</dd>
 
                 <dt class="term">Sans-serif</dt>
                 <dd class="definition" id="sans-serif">A type of font family; depicted in this sentence. There aren't any 'feet' along the ends of the letters.</dd>
 
                 <dt class="term">Saturation</dt>
-                <dd class="definition">The amount of gray in a color value</dd>
+                <dd class="definition">The amount of gray in a color value.</dd>
 
                 <dt class="term">Serif</dt>
                 <dd class="definition" id="serif">A type of font family; depicted in this sentence. There are little 'feet' along the ends of the letters.</dd>
 
                 <dt class="term">Viewport</dt>
-                <dd class="definition">The user's visible area of a webpage</dd>
+                <dd class="definition">The user's visible area of a webpage.</dd>
             </dl>
         </section>
 
@@ -106,6 +110,8 @@
                 </tr>
                 <tr>
                     <td>px</td>
+                    <td class="work-progress">Work in Progress.</td>
+                    <td class="work-progress">Work in Progress.</td>
                 </tr>
                 <tr>
                     <td>%</td>
@@ -171,12 +177,24 @@
 
             <div>
                 <h3>Flexbox</h3>
-                <div id="empty-flexbox"></div>
+                <p class="Work in work-progress">Work in progress.</p>
+                <div id="empty-flexbox">
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                    <div class="flex-item"></div>
+                </div>
             </div>
 
             <div>
                 <h3>Grid</h3>
-                <div id="empty-grid-box"></div>
+                <p class="Work in work-progress">Work in progress.</p>
+                <div id="empty-grid-box">
+                    <div class="grid-item">
+                        <p class="Work in work-progress">Work in progress.</p>
+                    </div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
             </div>
 
         </section>
@@ -272,6 +290,7 @@
                 <li class="unordered-list-item">word-spacing: <em>unit of measurement</em>;</li>
             </ul>
             <h4 class="sub-heading ">Pseudo-elements</h4>
+            <p class="Work in work-progress">Work in progress.</p>
             <ul>
                 <li class="unordered-list-item">:first-letter</li>
                 <li class="unordered-list-item">:first-line</li>
@@ -291,6 +310,9 @@
 
         <section id="References" class="main-section">
             <header class="heading">References</header>
+            <p class="Work in work-progress">Work in progress.</p>
+            <p>HTML and CSS: Design and Build Websites by Jon Duckett</p>
+            <p>w3schools.com</p>
         </section>
 
     </main>
